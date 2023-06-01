@@ -53,6 +53,6 @@ $qrCode = QrCode::create($data)
     ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin());
 
 
-        return Template::raw( $writer->write($qrCode) );
+        return Template::raw( $writer->write($qrCode)->getString() );
     }
 }
