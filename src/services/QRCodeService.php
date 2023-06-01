@@ -12,8 +12,6 @@ namespace kuriousagency\qrcode\services;
 
 use kuriousagency\qrcode\QRCode as Plugin;
 
-use Endroid\QrCode\QrCode;
-
 use Craft;
 use craft\base\Component;
 use craft\helpers\Template;
