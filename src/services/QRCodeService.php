@@ -52,7 +52,7 @@ $qrCode = QrCode::create($data)
     ->setErrorCorrectionLevel(new ErrorCorrectionLevelLow())
     ->setSize($size)
     ->setMargin(10)
-    ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin())
+    ->setRoundBlockSizeMode(new RoundBlockSizeModeMargin());
 
 
         return Template::raw( $writer->write($qrCode) );
